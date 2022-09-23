@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inscrivez-vous!</title>
+</head>
+<body>
+    <section class="cover">
+        <!-- start : Menu-->
+        <header class="header">
+            <nav class="header__nav">
+                <a class="header__link" href="index.html">Accueil</a>
+                <a class="header__link" href="about.html">Qui sommes-nous?</a>
+                <a class="header__link" href="news.html">News</a>
+                <a class="header__link" href="inscription.html">Inscription</a>
+                <a class="header__link" href="infos.html">Infos pratiques</a>
+                <a class="header__link" href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <!-- end : Menu-->
+        <!-- start : logo-->
+        <section class="corps">
+            <div class="encadre">
+                <img class="corps__logo" alt="" src="images/logo.webp">
+            </div>
+            <!-- end : logo-->
+            <!-- start : Form-->
+            <section class="Formulaire">
+                <form method="POST" action="">
+                    <fieldset>
+                        <legend> Informations sur votre enfant: </legend>
+                        <div>
+                            <label for="nom">Nom de l'enfant:</label>
+                            <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                        </div>  
+                        <div>
+                            <label for="prenom">Prenom de l'enfant:</label>
+                            <input type="text" name="prenom" id="prenom" placeholder="Prenom" required>
+                        </div>
+                        
+                        <div>
+                            <label for="DateNaissance">Date de naissance de votre enfant:</label>
+                            <input type="date" name="date" id="date" placeholder="jour.mois.année" required>
+                        </div>
+                        <div>
+                            <label for="tel_enf">Téléphone de l'enfant (si il y en a un):</label>
+                            <input type="tel" name="tel_enf" id="tel_enf" placeholder="07XXXXXXXX">
+                        </div>
+                        
+                        <div>
+                            <input type="radio" id="genreF" name="option-genre" value="genreF" checked>
+                            <label for="genreF">Fille</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="genreM" name="option-genre" value="genreM">
+                            <label for="genreM">Garçon</label>
+                        </div>
+                    
+                        <div>
+                            <label for="remarques">Remarques particulière (allergie, ...):</label>
+                            <input type="text" name="remarques" id="remarques" placeholder="..."
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Représentant légal:</legend>
+                        <div>
+                            <label for="nomrep">Nom:</label>
+                            <input type="text" name="nomrep" id="nonomrepm" placeholder="Nom" required>
+                        </div>  
+                        <div>
+                            <label for="prenomrep">Prenom:</label>
+                            <input type="text" name="prenomrep" id="prenomrep" placeholder="Prenom" required>
+                        </div>
+                        <div>
+                            <label for="mailrep">Email:</label>
+                            <input type="email" name="mailrep" id="mailrep" placeholder="email@mail.ch" required>
+                        </div>  
+                        <div>
+                            <label for="telrep">Téléphone:</label>
+                            <input type="tel" name="telrep" id="telrep" placeholder="07XXXXXXXX" required>
+                        </div>
+                        <fieldset>
+                            <legend>Adresse: </legend>
+                            <div>
+                                <label for="rue">Rue: </label>
+                                <input type="text" name="rue" id="rue" placeholder="rue ..." required>
+                                <label for="numero">Numéro: </label>
+                                <input type="number" name="numero" id="numero" placeholder="12" required>
+                            </div>
+                            <div>
+                                <label for="codepostal">Code postal: </label>
+                                <input type="number" name="codepostal" id="codepostal" placeholder="1xxx" required>
+                            </div>
+                            <div>
+                                <label for="ville">Ville: </label>
+                                <input type="text" name="ville" id="ville" placeholder="Marsens" required>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Robotique: </legend>
+                        <p>Votre enfant est déjà membre du Club de Science et de Robotique? : </p>
+                        <div>
+                            <input type="radio" id="membreoui" name="option-membre" value="membreoui" checked>
+                            <label for="membreoui">Oui</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="membrenon" name="option-membre" value="membrenon" >
+                            <label for="membrenon">Non</label>
+                        </div>
+
+                        <p>Sinon, a-t-il suivi le cours à l'EPFL "Les robots, c'est l'affaire des filles" ou "Construire et programmer un robot" ? </p>
+                        <div>
+                            <input type="radio" id="epfloui" name="option-epfl" value="epfloui" checked>
+                            <label for="epfloui">Oui</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="epflnon" name="option-epfl" value="epflnon" >
+                            <label for="epflnon">Non</label>
+                        </div>
+                        <div>
+                            <label for="datecours">Si oui, date du cours (environ): </label>
+                            <input type="date" name="datecours" id="datecours" placeholder=""
+                        </div>
+                        <fieldset>
+                                <legend>Est ce que votre enfant connait les langages informatiques suivants?:</legend>
+                            <div>
+                                <input type="checkbox" id="rep1" name="rep1" >
+                                <label for="rep1">Mindstorms (logiciel lego sous forme de briques)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="rep2" name="rep1" >
+                                <label for="rep2">Scratch</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="rep3" name="rep1" >
+                                <label for="rep3">Python</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="rep4" name="rep1" >
+                                <label for="rep4">Autre</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Mon enfant souhaite participer à :</legend>
+                            <div>
+                                <input type="checkbox" id="comp1" name="comp1" >
+                                <label for="comp1"><a href="https://www.first-lego-league.org/en/challenge/home.html" target="_blank"> La First Lego League </a></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="comp2" name="comp2" >
+                                <label for="comp2"><a href="https://worldrobotolympiad.ch/fr/startseite-fr/" target="_blank"> La World Robot Olympiad </a> </label>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset>
+                    <p id="frais">Les frais d’inscriptions sont de 100.- par année. Nous demandons aussi une participation aux frais d’inscription pour les différentes compétitions, environ 50.- par compétition (variable en fonction du nombre de participants)</p>
+                    <p id="numerique">Pour la saison 2021-2022, j’autorise l'association "Club de Sciences et de robotique" à fixer, reproduire et communiquer au public les photographies, vidéos ou captations numériques prises dans le cadre associatif. Les images pourront être exploitées et utilisées directement par l’association sous toute forme et tous supports connus et inconnus à ce jour, pour un territoire illimité, sans limitation de durée, intégralement ou par extraits et notamment : presse, livre, supports d’enregistrement numérique, exposition, publicité, projection publique, concours, site internet, réseaux sociaux. Le bénéficiaire de l’autorisation s’interdit expressément de procéder à une exploitation des photographies susceptible de porter atteinte à la vie privée ou à la réputation, et d’utiliser les photographies, vidéos ou captations numériques de la présente, dans tout support ou toute exploitation préjudiciable. Je me reconnais être entièrement rempli de mes droits et je ne pourrai prétendre à aucune rémunération pour l’exploitation des droits visés aux présentes. Je garantis que ni moi, ni le cas échéant la personne que je représente, n’est lié par un contrat exclusif relatif à l’utilisation de mon image ou de mon nom. Pour tout litige né de l’interprétation ou de l’exécution des présentes, il est fait attribution expresse de juridiction aux tribunaux suisses. *</p>
+                        <div>
+                            <input type="radio" id="accordoui" name="option-accord" value="accordoui" required>
+                            <label for="accordoui">Oui, je l'y autorise</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="accordnon" name="option-accord" value="accordnon" required>
+                            <label for="accordnon">Non</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Envoyer le formulaire</button>
+                </form>
+            </section>
+        <!-- end : Form-->
+    </section>
+</body>
+</html>

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  z-index: 10;
+}
+
+.header__nav {
+  font-size: 20px;
+}
+
+.header__link {
+  margin: 10px;
+}
+
+.corps__logo {
+  width: 100%;
+}
+
+.encadre {
+  width: 100%;
+  border-style: solid none solid none;
+}
+
+#corps__photoAccueil {
+  width: 100%;
+  border: solid 2px black;
+  border-radius: 400px;
+}
+
+#corps__photop {
+  padding: 20px;
+  position: relative;
+  top: 20px;
+}
+
+form {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+fieldset {
+  margin: 20px;
+  padding: 10px;
+}
+
+#frais {
+  margin-bottom: 20px;
+}
+
+#numerique {
+  margin-bottom: 20px;
+}
+
+.Formulaire {
+  position: relative;
+  top: 0px;
+}
+
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
