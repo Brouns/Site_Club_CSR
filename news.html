@@ -5,52 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Document</title>
 </head>
 <body>
-   <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+<script>
+    $(function(){
+      $("#nav-placeholder").load("/templates/navbar.html");
+    });
+</script>
+<!--fin Navigation bar-->
+
+<!-- première section -->
+<div class="container d-flex justify-content-center align-items-center" id="Container_title_news">
+    <div class="row">
+        <h2 class="col-12 text-center border border-dark" id="News_title">L'actualité du club</h2>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col align-self-center">
+        <div class="card">
+            <img src="/images/wro-switzerland-logo-1.png" class="card-img-top" alt="First Lego League">
+            <div class="card-body">
+                <h5 class="card-title">WRO 2022</h5>
+                <div class="card-text justify-content-center">
+                    La saison est terminée avec de beaux résultats<br>
+                    Nos équipes Elementary se classent 8 et 11ème<br>
+                    Notre équipe Junior se classe 10ème<br>
+                    Notre équipe senior se classe 7ème<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col align-self-center">
+     <div class="card">
+                <img src="/images/FIRSTLego_IconVert_RGB.png" class="card-img-top" alt="First Lego League">
+                <div class="card-body">
+                    <h5 class="card-title">First Lego League</h5>
+                    <div class="card-text justify-content-center">
+                        La First Lego League revient !
+                        La compétition aura lieu le 17 décembre 2022 à l'EPFL
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col align-self-center">
+      <div class="card">
+                <img src="/images/SUPERPOWERED_Logo_Stacked_RGB_OneColor-01.png" class="card-img-top" alt="First Lego League">
+                <div class="card-body">
+                    <h5 class="card-title">First Lego League 2022</h5>
+                    <div class="card-text">
+                        Les régles de la FLL sont publiées !
+                    </div>
+                </div>
+            </div>
     </div>
   </div>
-</nav>
+</div>
+
+
+
+
+<!-- fin première section -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
 integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 crossorigin="anonymous"></script>

@@ -1,3 +1,22 @@
+@font-face {
+ font-family: "Good TImes";
+ src: local("/fonts/good_times/good times rg.otf");
+}
+nav {
+    font-family: "Good TImes";
+}
+h2 {
+    font-family: "Good TImes";
+}
+
+#News_title {
+    font-size: 80px;
+}
+
+#Container_title_news {
+    height: 150px;
+}
+
 .header{
     position:sticky;
     background-color: white;
