@@ -1,11 +1,9 @@
-@font-face {
- font-family: "Good TImes";
- src: local("/fonts/good_times/good times rg.otf");
-}
+
 nav {
     font-family: "Good TImes";
 }
-h2 {
+
+#News_title,#About_title {
     font-family: "Good TImes";
 }
 
@@ -13,10 +11,25 @@ h2 {
     font-size: 80px;
 }
 
+#About_title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 #Container_title_news {
     height: 150px;
 }
 
+#About_text {
+    font-family: "Libre Franklin";
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.About_text_h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
 .header{
     position:sticky;
     background-color: white;
