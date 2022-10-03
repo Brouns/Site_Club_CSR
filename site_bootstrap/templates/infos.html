@@ -1,26 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Infos</title>
-</head>
-<body>
- <!--Navigation bar-->
-<div id="nav-placeholder"></div>
-<script>
-    $(function(){
-      $("#nav-placeholder").load("/templates/navbar.html");
-    });
-</script>
-<!--fin Navigation bar-->
+{% extends 'base.html' %}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-crossorigin="anonymous"></script>
-</body>
-</html>
+{% block body %}
+<div class="row" id="About_text">
+        <div class="col offset-1 border ">
+            <h1 id="infos_title_p">Infos pratiques</h1>
+
+            <h2 id="infos_title">Entrainements:</h2>
+            <p class="infos_text">Le samedi de 14h à 17h</p>
+
+            <p class= infos_text id="infos_address"><strong>Lieu</strong> : Ecole primaire de Marsens, 25 route des Bugnons 1633 Marsens</p>
+            <h4>Nous trouver:  <a href="https://www.google.com/maps/search/?api=1&query=46.655718,7.061084">Club de Sciences et Robotique</h4>
+        </div>
+</div>
+
+            {% endblock %}

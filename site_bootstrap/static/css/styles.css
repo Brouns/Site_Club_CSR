@@ -7,4 +7,77 @@ nav {
   font-family: "Good TImes";
 }
 
-/*# sourceMappingURL=style.css.map */
+#About_title {
+  font-family: "Good TImes";
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#About_text {
+  font-family: "Libre Franklin";
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.About_text_h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.list {
+  margin-left: 50px;
+}
+
+.img-fluid {
+  border-radius: 500px;
+}
+
+#News_title {
+  font-family: "Good TImes";
+  font-size: 80px;
+}
+
+#Container_title_news {
+  height: 220px;
+}
+
+#infos_title, #infos_title_p {
+  font-family: "Good TImes";
+}
+
+#infos_title_p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-bottom-style: solid;
+}
+
+#infos_title {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.infos_text {
+  font-size: large;
+}
+
+#infos_address {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#contact_title {
+  font-family: "Good TImes";
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-bottom-style: solid;
+}
+
+.contact_container {
+  display: flex;
+}
+.contact_container #contact_text {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
