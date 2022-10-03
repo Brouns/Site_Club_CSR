@@ -1,1 +1,1 @@
-web: gunicorn site_bootstrap:app --log-file=-
+web: gunicorn site_bootstrap:server
