@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Club de Sciences et Robotique</title>
 </head>
@@ -14,7 +14,7 @@
 <div id="nav-placeholder"></div>
 <script>
     $(function(){
-      $("#nav-placeholder").load("/templates/navbar.html");
+      $("#nav-placeholder").load("{{url_for('static', filename='navbar.html')}}");
     });
 </script>
 <!--fin Navigation bar-->
@@ -28,11 +28,11 @@
     <div class="container">
 
         <div class="row">
-            <img class="img-fluid" alt="" src="images/logo.webp">
+            <img class="img-fluid" alt="" src="{{url_for('static', filename='./images/logo.webp')}}">
         </div>
         <div class="row">
-            <img class="img-fluid" id="corps__photoAccueil" src="images/photo_groupe.webp" alt="photo de l'équipe">
-        </div>
+            <img class="img-fluid" id="corps__photoAccueil" src="{{url_for('static', filename='/images/photo_groupe.webp')}}", alt="photo d'equipe">
+        </di
     </div>
 
         

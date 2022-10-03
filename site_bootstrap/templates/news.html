@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Document</title>
 </head>
@@ -14,7 +14,7 @@
 <div id="nav-placeholder"></div>
 <script>
     $(function(){
-      $("#nav-placeholder").load("/templates/navbar.html");
+      $("#nav-placeholder").load("{{url_for('static', filename='navbar.html')}}");
     });
 </script>
 <!--fin Navigation bar-->

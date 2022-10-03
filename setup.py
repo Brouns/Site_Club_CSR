@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='site_bootstrap',
-    version='',
+    version='1',
     packages=[''],
     url='',
     license='',
