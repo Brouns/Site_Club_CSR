@@ -1,1 +1,1 @@
-web: gunicorn site_bootstrap.static:app
+web: gunicorn site_bootstrap.static.salut:app
