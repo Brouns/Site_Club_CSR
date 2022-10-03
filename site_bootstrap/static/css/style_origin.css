@@ -3,7 +3,7 @@ nav {
     font-family: "Good TImes";
 }
 
-#News_title,#About_title {
+#News_title,#About_title, #infos_title,#infos_title_p {
     font-family: "Good TImes";
 }
 
@@ -26,6 +26,24 @@ nav {
     line-height: 40px;
 }
 
+#infos_title_p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-bottom-style: solid;
+}
+
+#infos_title{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.infos_text{
+    font-size: large;
+}
+
+#infos_address{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
 .About_text_h3 {
     margin-top: 40px;
     margin-bottom: 10px;
