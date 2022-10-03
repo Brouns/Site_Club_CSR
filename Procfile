@@ -1,1 +1,1 @@
-web: gunicorn site_bootstrap:main
+web: gunicorn main:app
