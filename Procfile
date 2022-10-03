@@ -1,1 +1,1 @@
-web: gunicorn site_bootstrap:server.py
+web: gunicorn site_bootstrap:app
