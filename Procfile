@@ -1,1 +1,1 @@
-web: gunicorn site_bootstrap.wsgi
+web: gunicorn site_bootstrap.server
