@@ -31,8 +31,14 @@ nav {
 
 .img-fluid {
   border-radius: 500px;
+  margin-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .img-fluid {
+    border-radius: 500px;
+  }
+}
 #News_title {
   font-family: "Good TImes";
   font-size: 80px;
