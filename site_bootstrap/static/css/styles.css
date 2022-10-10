@@ -33,6 +33,9 @@ nav {
   #About_title {
     font-size: 25px;
   }
+  .About_text_h3 {
+    font-size: 20px;
+  }
   #About_text {
     font-size: 15px;
   }
@@ -56,6 +59,18 @@ nav {
   height: 220px;
 }
 
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 30px;
+  }
+  #News_title {
+    font-size: 50px;
+  }
+}
 #infos_title, #infos_title_p {
   font-family: "Good TImes";
 }
