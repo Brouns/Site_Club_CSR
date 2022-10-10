@@ -39,6 +39,10 @@ nav {
   #About_text {
     font-size: 15px;
   }
+  .About_text_h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
 }
 .img-fluid {
   border-radius: 500px;
@@ -60,7 +64,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .row {
+  #news_card_block {
     display: flex;
     flex-direction: column;
   }
@@ -100,6 +104,10 @@ nav {
   margin-top: 20px;
   margin-bottom: 30px;
   border-bottom-style: solid;
+}
+
+#contact_button {
+  margin-bottom: 30px;
 }
 
 .contact_container {
